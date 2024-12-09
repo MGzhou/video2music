@@ -14,11 +14,11 @@
 
 使用：
 
-首先，将mp4视频**拖拽**到界面中，也可以通过`选择文件`导入视频。
+首先，将mp4视频**拖拽**到界面中，也可以通过 `选择文件`导入视频。
 
-然后，点击`开始转换`，稍等片刻就会弹出结果。
+然后，点击 `开始转换`，稍等片刻就会弹出结果。
 
-> 如果成功转换，默认导出文件夹是界面显示的 `输出地址`。
+> 如果成功转换，默认导出文件夹是界面显示的 `输出路径`。
 
 ![image-20241209213045918](assets/image-20241209213045918.png)
 
@@ -59,9 +59,8 @@ python main.py
 pyinstaller -F -w -n video2music main.py --icon=app.ico --paths [xxx]\Lib\site-packages --add-data "[xxx]\Lib\site-packages\tkinterdnd2;tkinterdnd2"  --hidden-import=tkinterdnd2 --clean
 ```
 
-> 由于使用了第三方支持拖拽库tkinterdnd2，pyinstaller打包不能自动将该库文件打包，因此`[xxx]`需要放置python路径，可以参考[博客](https://blog.csdn.net/Zao5544/article/details/142153205)。
+> 由于使用了第三方支持拖拽库tkinterdnd2，pyinstaller打包不能自动将该库文件打包，因此 `[xxx]`需要放置python路径，可以参考[博客](https://blog.csdn.net/Zao5544/article/details/142153205)。
 
 ## 感谢
 
 [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg)
-
